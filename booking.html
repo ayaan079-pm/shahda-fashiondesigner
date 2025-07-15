@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Fashion Designer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, nav, main, footer {
+      padding: 10px;
+    }
+    header {
+      background: black;
+      color: gold;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: gold;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    fieldset {
+      border: 2px solid gold;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+      color: black;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    button {
+      background: gold;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+    }
+    button:hover {
+      background: black;
+      color: gold;
+    }
+    footer {
+      background: black;
+      color: gold;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Fashion Designer - Booking</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h2>Book Your Styling Appointment</h2>
+    <form>
+      <fieldset>
+        <legend>Client Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
+        
+        <label for="service">Service Type:</label>
+        <select id="service" name="service" required>
+          <option value="">Select service</option>
+          <option value="casual">Casual Styling</option>
+          <option value="formal">Formal Styling</option>
+          <option value="event">Event Styling</option>
+        </select>
+        
+        <label>Preferred Time:</label>
+        <input type="radio" id="morning" name="time" value="morning" required>
+        <label for="morning">Morning</label>
+        <input type="radio" id="afternoon" name="time" value="afternoon">
+        <label for="afternoon">Afternoon</label>
+        <input type="radio" id="evening" name="time" value="evening">
+        <label for="evening">Evening</label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Extras</legend>
+        <input type="checkbox" id="makeup" name="extras" value="makeup">
+        <label for="makeup">Makeup</label>
+        <input type="checkbox" id="accessories" name="extras" value="accessories">
+        <label for="accessories">Accessories</label>
+      </fieldset>
+      
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Any special requests..."></textarea>
+      
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Fashion Designer. All rights reserved.
+  </footer>
+
+</body>
+</html>
